@@ -3,8 +3,9 @@ import sys
 from os import path, remove
 
 out_file_name = "anon_out.txt"
+# create an anon_in.txt and dump in all emails
 # python anonymiser.py anon_in.txt
-# emp-website run -a web-backend-internal "django-admin anonymise_user --email <email_addresses>"
+# emp-website run -a web-backend-internal "django-admin anonymize_user --email <email_addresses>"
 
 def check_and_delete_out_file():
     out_file = path.exists(out_file_name)
